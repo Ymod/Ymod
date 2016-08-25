@@ -70,13 +70,10 @@ h3, .h3 { font-size: 27px; }
 h4, .h4 { font-size: 23px; }
 h5, .h5 { font-size: 18px; }
 h6, .h6 { font-size: 16px; }
-.pomegranate {
-    color: #C0392B;
-}
+
 .underline-dotted{
 	border-bottom: 1px dashed;
 	&:hover{
-		color: #C0392B;
 		text-decoration: none;
 	}
 }
@@ -85,19 +82,16 @@ h6, .h6 { font-size: 16px; }
 	text-align: center;
 	padding-bottom: 30px;
 	h1 {
-		color: $color_pickled_bluewood_approx;
 		margin: 0;
 	}
 	h2 {
 		font-size: 20px;
 		text-transform: uppercase;
 		font-weight: 700;
-		color: $color_pewter_approx;
 	}
 	hr {
 		width: 10%;
 		border-width: 2px;
-		border-color: $color_niagara_approx;
 	}
 }
 
