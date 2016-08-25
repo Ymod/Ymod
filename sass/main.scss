@@ -1,3 +1,18 @@
+@import "_variables";
+@import "_mixin";
+
+@include font-face('Lato', '#{$icon-font-path}lato-normal', normal, normal);
+@include font-face('Lato', '#{$icon-font-path}lato-light', 300, normal);
+@include font-face('Lato', '#{$icon-font-path}lato-heavy', 600, normal);
+@include font-face('fontawesome', '#{$icon-font-path}fontawesome-webfont', normal, normal);
+
+// generate all background: .bg-moonlight
+@each $label, $color in $color-list {
+  .bg-#{$label}{
+    background-color: $color;
+    color: contrast-color($color);
+  };
+}
 
 /* PADDING, MARGIN & ALIGNMENT */
 .pad5 { padding-top:5px; }
@@ -244,7 +259,7 @@ p .btn {
 .btn-outline-xl {
 	padding: 18px 30px;
 	font-size: 24px;
-	
+
 }
 
 .btn-outline.outline-light,
